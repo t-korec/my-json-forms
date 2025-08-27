@@ -4,9 +4,11 @@ A dynamic form generator that creates forms based on JSON configuration.
 
 ## How to run
 
+recomended node version: 22.14.0 and above
+
 ```bash
 npm i
-npm run prepare
+npx panda # or npx panda --watch
 npm run dev
 ```
 
