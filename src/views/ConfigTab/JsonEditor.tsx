@@ -2,7 +2,6 @@ import { type ChangeEvent, type ReactNode } from "react";
 import { Label, ScrollArea } from "radix-ui";
 import { css } from "../../../styled-system/css";
 import i18nprep from "../../i18nprep";
-import { theme } from "../../theme";
 import { CrossCircledIcon } from "@radix-ui/react-icons";
 
 export default function JsonEditor({
@@ -162,7 +161,8 @@ const JsonScrollArea = ({ children }: { children: ReactNode }) => {
       className={css({
         height: "100%",
         width: "100%",
-        border: `1px solid ${theme.colors.border.secondary}`,
+        border: "1px solid",
+        borderColor: "border.secondary",
         borderRadius: "6px",
         overflow: "hidden",
       })}
@@ -184,13 +184,13 @@ const JsonScrollArea = ({ children }: { children: ReactNode }) => {
             userSelect: "none",
             touchAction: "none",
             padding: "2px",
-            background: theme.colors.background.scrollbar,
+            background: "surface.secondary",
           })}
         >
           <ScrollArea.Thumb
             className={css({
               flex: "1",
-              background: theme.colors.background.thumb,
+              background: "surface.tertiary",
               borderRadius: "4px",
             })}
           />

@@ -24,7 +24,7 @@ const Card = React.forwardRef<HTMLDivElement, CardProps>(
         borderColor: "border.primary",
       }),
       secondary: css({
-        backgroundColor: "surface.secondary",
+        backgroundColor: "surface.tertiary",
         borderColor: "border.secondary",
       }),
     };
